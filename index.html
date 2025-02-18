@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Steganography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Steganography</h1>
+
+        <div id="encode-section">
+            <h2>Encode</h2>
+            <input type="file" id="encode-image" accept="image/*">
+            <textarea id="encode-message" placeholder="Enter your message"></textarea>
+            <input type="password" id="encode-password" placeholder="Enter a passcode">
+            <button id="encode-button">Encode</button>
+            <div id="encoded-image-container"></div>
+            <p id="encode-status"></p>
+        </div>
+
+        <div id="decode-section">
+            <h2>Decode</h2>
+            <input type="file" id="decode-image" accept="image/*">
+            <input type="password" id="decode-password" placeholder="Enter passcode">
+            <button id="decode-button">Decode</button>
+            <pre id="decoded-message"></pre>
+            <p id="decode-status"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

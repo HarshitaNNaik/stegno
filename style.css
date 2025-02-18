@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Adjust as needed */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+textarea, input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#encoded-image-container img {
+    max-width: 100%;
+    margin-top: 10px;
+    display: block; /* Prevent extra space below image */
+}
+
+#decoded-message {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: pre-wrap; /* Allow text to wrap */
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
